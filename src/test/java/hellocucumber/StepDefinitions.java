@@ -16,9 +16,9 @@ public class StepDefinitions {
     private String today;
     private String actualAnswer;
 
-    @Given("today is Sunday")
-    public void today_is_Sunday() {
-        today = "Sunday";
+    @Given("today is {string}")
+    public void today_is(String today) {
+        this.today = today;
     }
 
     @When("I ask whether it's Friday yet")
